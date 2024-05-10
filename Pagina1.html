@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Principios Básicos de HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: rgb(63,94,251);
+            background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+            scroll-behavior: smooth;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            font-family: cursive;
+            padding-left: 300px; 
+            padding-right: 300px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            img{
+                width: 500px;
+            }
+        }
+
+        @media screen and (max-width: 1000px) {
+            body {
+                padding-left: 20px;
+                padding-right: 20px;
+                
+            }
+        }
+    
+        .lista:hover{
+            scale: 10px;
+        }
+
+
+        
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="font-family: cursive;">Principios Básicos de HTML</h1>
+        
+    </header>
+    <nav>
+        <ol >
+            <li class="lista"><a href="#introduccion">Introducción</a></li>
+            <li class="lista"><a href="#estructura">Estructura básica</a></li>
+            <li class="lista"><a href="#etiquetas">Etiquetas HTML</a></li>
+            <li class="lista"><a href="#ejemplo">Ejemplo de página</a></li>
+        </ol>
+    </nav>
+    <section style="display: flex; align-items: center; flex-direction: column;  " id="introduccion">
+        <h2>Introducción</h2>
+        <p>HTML (HyperText Markup Language) es el lenguaje estándar utilizado para crear y diseñar páginas web. Se compone de una serie de etiquetas que definen la estructura y el contenido de una página web.</p>
+        <img style="margin: auto; " src="https://raw.githubusercontent.com/gist/vininjr/d29bb07bdadb41e4b0923bc8fa748b1a/raw/88f20c9d749d756be63f22b09f3c4ac570bc5101/programming.gif"  alt="">
+    </section>
+    <section id="estructura">
+        <h2>Estructura básica</h2>
+        <p>Una página HTML básica consta de las siguientes partes:</p>
+        <ul>
+            <li>La etiqueta `<html>`, que engloba todo el contenido de la página.</li>
+            <li>La etiqueta `<head>`, que contiene metadatos como el título de la página y enlaces a archivos CSS y JavaScript.</li>
+            <li>La etiqueta `<body>`, que contiene el contenido visible de la página, como texto, imágenes y otros elementos.</li>
+        </ul>
+    </section>
+    <section id="etiquetas">
+        <h2>Etiquetas HTML</h2>
+        <p>Las etiquetas HTML se utilizan para estructurar el contenido de una página web. Algunas etiquetas comunes incluyen:</p>
+        <ul>
+            <li>`<h1>` - `<h6>`: Encabezados de distintos niveles.</li>
+            <li>`<p>`: Párrafos de texto.</li>
+            <li>`<a>`: Enlaces.</li>
+            <li>`<img>`: Imágenes.</li>
+            <li>`<ul>`, `<ol>`, `<li>`: Listas sin orden y listas ordenadas.</li>
+        </ul>
+    </section>
+    <section id="ejemplo">
+        <h2>Ejemplo de página</h2>
+        <p>A continuación, se muestra un ejemplo básico de una página HTML:</p>
+        <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="es"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;title&gt;Mi primera página&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;h1&gt;Hola, mundo!&lt;/h1&gt;
+                &lt;p&gt;Esta es mi primera página web.&lt;/p&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </pre>
+    </section>
+</body>
+</html>
