@@ -1,7 +1,7 @@
 body {
-
     --tw-bg-opacity: 1; 
     background-color: rgb(2 6 23 / var(--tw-bg-opacity));
+    font-family: cursive;
 }
 
 .start{
@@ -92,7 +92,7 @@ body {
     padding-top: 50px;
     width: screen;
     display: flex; 
-
+    gap: 10px;
     justify-content: center;
     align-items: center;
     
@@ -102,7 +102,7 @@ body {
 }
 
 .card {
-    width: 230px;
+    width: 240px;
     height: 294px;
     background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
     border-radius: 20px;
@@ -112,19 +112,162 @@ body {
    .card2 { 
     border-radius: 18px;
     padding: 20px;
-    width: 190px;
+    width: 200px;
     height: 254px;
     --tw-bg-opacity: 1; 
     background-color: rgb(1 1 15 / var(--tw-bg-opacity));
     transition: all .2s;
+    border: 1px solid rgba(255, 255, 255, 0.139);
 
    }
    
    .card2:hover {
-    transform: scale(0.98);
+    transform: scale(0.97);
     border-radius: 20px;
    }
    
    .card:hover {
     box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
    }
+
+
+   
+    .cardfa {
+    width: 570px;
+    height: 145px;
+    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+    border-radius: 20px;
+    transition: all .3s;
+   }
+   
+   .card2fa { 
+    border-radius: 18px;
+    padding: 20px;
+    width: 530px;
+    height: 104px;
+    --tw-bg-opacity: 1; 
+    background-color: rgb(1 1 15 / var(--tw-bg-opacity));
+    transition: all .2s;
+    border: 1px solid rgba(255, 255, 255, 0.139);
+
+   }
+   
+   .card2fa:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+   }
+   
+   .cardfa:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+   }
+
+   .tecnologias{
+
+    padding-top: 20px;
+    width: screen;
+    display: flex; 
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+
+    
+   }
+   .divtec{
+    display: flex;
+    flex-direction: row; 
+    gap: 20px;
+
+   }
+
+   .frontend{
+    display: flex;flex-direction: row; gap: 80px; color: white; justify-content: center;
+   }
+   .frontend2{
+    display: flex;flex-direction: row; gap: 49px; color: white; justify-content: center;
+
+   }
+
+   .cardp {
+    width: 410px;
+    height: 265px;
+    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+    border-radius: 20px;
+    transition: all .3s;
+   }
+   
+   .card2p { 
+    border-radius: 18px;
+    padding: 20px;
+    width: 370px;
+    height: 224px;
+    --tw-bg-opacity: 1; 
+    background-color: rgb(1 1 15 / var(--tw-bg-opacity));
+    transition: all .2s;
+    border: 1px solid rgba(255, 255, 255, 0.139);
+
+   }
+   
+   .card2p:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+   }
+   
+   .cardp:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+   }
+
+
+   @media screen and (max-width: 768px) {
+    .start {
+        width: screen;
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+    .textstart{
+        width: 300px;
+        display: flex; 
+        justify-content: center;
+        flex-direction: column;
+        line-height: 20px;
+    }
+
+    .body{
+        flex-direction: column;
+    }
+
+    .cardfa{
+        width: 330px;
+        height: 172px;
+    }
+    .card2fa{
+        width: 290px;
+        height: 130px;
+    }
+
+    .divtec{
+        flex-direction: column;
+    }
+
+    .cardp{
+        width: 330px;
+        height: 265px;
+    }
+    .card2p{
+        width: 290px;
+        height: 224px;
+    }
+    .frontend{
+        gap: 50px;
+
+    }
+
+    .frontend2{
+        gap: 30px;
+
+    }
+
+
+}
