@@ -232,6 +232,7 @@ body {
         justify-content: center;
         flex-direction: column;
         line-height: 20px;
+        text-align: center;
     }
 
     .body{
